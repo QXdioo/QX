@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome in QXDio</title>
+    <link rel="shortcut icon" href="sct.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<style>
+	* {
+	  margin: 0;
+	  padding: 0;
+	}
+		body {
+			background-color: #212d4a;
+			margin: 0px;
+			padding: 0px;
+			
+		}
+		header {
+			background-color: #16d686;
+			padding: 5px;
+			text-align: center;
+			margin: 0px;
+		}
+		header img {
+			width: 40px;
+			margin: 1,5px;
+			float: left;
+			
+		}
+		header nav {
+			background-color: none;
+			padding: 0px;
+			text-align: right;
+			
+		}
+		header nav a {
+		  color: black;
+		}
+		header nav a :hover {
+		  color: #800f97f4;
+		}
+		header nav i {
+		  font-size: 20px;
+		  padding: 0px;
+		  margin: 10px;
+		}
+		.content {
+		  width: 100%;
+	    height: 340px;
+		  background-image: linear-gradient(50deg,
+       #8cbdf2bd, #ffffff, #f2e9aef0);
+            animation: gradient 7s ease infinite;
+  }
+
+  @keyframes gradient {
+    10% {
+      background-position: 0% 50%;
+    }
+    55% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+		
+		.content h1 {
+		  font-family: cursive;
+		  font-size: 25px;
+			margin-top: 0;
+			margin-bottom: 10px;
+			position: absolute; top: 150px; left: 40px;
+			
+		}
+		.content h1 i {
+		  color: #00c8ff;
+		  font-size: 15px;
+		  
+		}
+		.content img {
+		  width: 140px;
+		  position: absolute; top: 130px; left: 250px;
+		  box-shadow: 5px 2px 6px rgba(0,0,0,0.3);
+		  border-radius: 10px;
+		  
+		}
+  .content bawah-judul {
+    font-size: 8px;
+			margin-top: 0;
+			margin-bottom: 10px;
+			position: absolute; top: 180px; left: 30px;
+			font-family: Sans-Serif;
+  }
+  .content bawah-judul a {
+    font-style: italic;
+    color: ;
+  }
+  .content bawah-judul b {
+    font-family: Serif-Bold;
+    font-size: 10px;
+  }
+   section button {
+    border-radius: 10px;
+    font-size: 9px;
+    height: 18px;
+    width: 90px;
+    padding: 3px;
+    margin: 2px;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bold;
+    box-shadow: 5px 2px 6px rgba(0,0,0,0.3);
+  }
+  section .tombol1 {
+    color: #000;
+    background-color: #fff;
+    border-block-color: #000;
+    position: absolute; top: 300px; left: 30px;
+    
+  }
+  section .tombol2 {
+    color: #fff;
+    background-color: black;
+    position: absolute; top: 300px; left: 130px;
+  }
+  section :hover{
+    font-size: 7px;
+    background-color: rgba(249,209,51,0.885);
+    color: #fff;
+
+  }
+  
+   .openbtn {
+       }
+    
+        
+   #mySidebar {
+		  z-index: 1;
+		  width: 250px;
+		  height: 270px;
+		  overflow: hidden;
+  transition: width 0.5s ease;
+		   padding-top: 50px;
+		  position: absolute; top: 200px; left: 90px;
+		  background-color: rgba(100,100,100,0.154);
+            backdrop-filter: blur(5px);
+            border: 1px solid transparent;
+		   box-shadow: 7px 7px 7px rgba(0,5,0,0.5);
+		  border-radius: 7px;
+		  
+		}
+		
+		
+		#mySidebar .a {
+		  padding: 10px 8px 10px 16px;
+		  text-decoration: none;
+		  font-size: 20px;
+		  color :#000;
+		  display: block;
+		  transition: 0.3s;
+		  text-align: center;
+		  background-color:#ffffffe4;
+		  margin: 2px;
+		  border-radius: 8px;
+		}
+
+		#mySidebar .a:hover {
+		  color: #f1f1f1;
+		  background-color: #c27f38dc;
+		}
+  #mySidebar  i {
+    position : absolute; left : 10px;
+  }
+
+		#mySidebar .closebtn {
+		  position: absolute; top: 280px; left: -40px;
+		  margin-left: 50px;
+		  box-shadow: 7px 7px 7px rgba(0,0,0,0.5);
+		  font-size: 25px;
+		  color: #edc788;
+		  width: 30px ;
+		  border-radius: 50%;
+		} 
+		#mySidebar .closebtn:hover {
+		  color: red;
+		  font-size: 25px;
+		}
+		
+		#box {
+		  width: 100%;
+		  height: 100%;
+		  background: #d4d4d4;
+		   position: absolute; top: 0px; left: 0px;
+		  z-index: 1;
+		  overflow: hidden;
+  transition: width 0.5s ease;
+		   padding-top: 10px;
+		   
+		}
+	#box .tutupbox{
+	  position: absolute; top: 10px; left: 10px;
+	  font-size: 30px;
+	}
+#box h1 {
+  text-align: center;
+} 
+#box #list {
+  background-color: #fff;
+  border-block-end-color: #000; 1px;
+  width: 90%;
+  height: 200px;
+  position:absolute; left :5%;
+  padding-top: 5px;
+  text-align: center;
+  font-family: Arial;
+  margin: 2px 2px;
+}
+
+ #list a {
+  border-radius: 8px;
+  background-color: #0182;
+  margin: 25px;
+  width:100px;
+  height: 20px;
+  padding:2px;
+  font-size: 25px;
+}
+section .yt {
+  
+    width: 240px; 
+    height 90px;
+    background: #000;
+    position: absolute; top: 450px; left: 92px; 
+    
+}
+#and {
+  width: 100%;
+  height: 300px;
+  font-size: 20px;
+  background-color: #979797de;
+  text-align: center;
+  padding-top: 10px;
+}
+footer {
+      color: #fff;
+      background-color: #484848;
+      padding: 20px;
+      text-align: center;
+      font-size: 10px;
+      font-family: Serif;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+	-----------------------DESKTOP--------------------------
+		  * {DESKTOP}
+		  
+@media (min-width: 600px) and (max-width: 1280px) {
+  header {
+    width : 1280px;
+  }
+	  .content {
+	    width: 1290px;
+	    height: 720px;
+	  }
+	
+	  .content h1 {
+		  font-family: cursive;
+		  font-size: 70px;
+			margin-top: 0;
+			margin-bottom: 10px;
+			position: absolute; top: 200px; left: 200px;
+		}
+			.content h1 i {
+		  color: #00c8ff;
+		  font-size: 25px;
+		}
+	  .content img {
+	    width: 300px;
+	    position: absolute; top: 160px; left: 800px;
+	  }
+	  .content bawah-judul {
+    font-size: 12px;
+			margin-top: 0;
+			margin-bottom: 10px;
+			position: absolute; top: 280px; left: 200px;
+			
+  }
+      .content bawah-judul b {
+    font-family: Serif-Bold;
+    font-size: 15px;
+  }
+     section button {
+    padding: 3px;
+    margin: 2px;
+    border-radius: 13px;
+    font-size: 20px;
+    height: 35px;
+    width: 190px;
+    text-align: center;
+    font-family: Serif-Bold;
+  }
+  section .tombol1 {
+    color: #000;
+    background-color: #fff;
+    border-block-color: #000;
+    position: absolute; top: 470px; left: 150px;
+    
+  }
+  section .tombol2 {
+    color: #fff;
+    background-color: black;
+    position: absolute; top: 470px; left: 380px;
+  }
+  
+ #mySidebar {
+		  position: absolute; top: 200px; left: 500px;
+		  z-index: 1;
+		  width: 300px;
+		  height: 270px;
+		  border-radius: 8px;
+		  transition: 0.5s;
+		  padding-top: 60px;
+		}
+	  #mySidebar .closebtn :hover {
+		  font-size: 20px;
+		}
+		section :hover{
+    font-size: 15px;
+    background-color: rgba(249,209,51,0.885);
+    color: #fff;
+	}
+	#box {
+		  width: 1280px;
+		  height: 720px;
+	}
+	#box .tutupbox{
+	  position: absolute; top: 10px; left: 10px;
+	  font-size: 50px;
+	}
+	 #list a {
+  border-radius: 8px;
+  background-color: #0182;
+  margin: 25px;
+  width:100px;
+  height: 20px;
+  padding:2px;
+  font-size: 30px;
+}   
+section .yt {
+  
+    width: 300px; 
+    height 90px;
+    background: #000;
+    position: absolute; top: 900px; left: 500px; 
+    
+}
+#and {
+  width: 1290px;
+  height: 400px;
+  font-size: 25px;
+}
+}
+	</style>
+</head>
+
+<body>
+	<header>
+	  <a href="profil.html">
+		<img src="logoQX.png" alt="Logo">
+	  </a>
+	    
+	<nav>
+	|	<a href="https://www.tiktok.com/@qxdio_?_t=8mBUSTpZ2lb&_r=1">
+	 	  <i class='bx bxl-tiktok'></i></a>
+	|	<a href="https://youtube.com/@qxdio?si=gaaGBTz9ptpyOQ5K">
+	 	  <i class='bx bxl-youtube' ></i></a>
+	|	<a href="https://www.instagram.com/qxdio_?igsh=YzA1aGR3cWNyNWx3">
+	 	  <i class='bx bxl-instagram'></i></a>
+	|	<a href="https://qxdioo.github.io/ayang/">
+	 	  <i class='bx bx-book-heart' ></i></a>
+	|</nav>
+</header>
+	<div class="content">
+	  <img src="fotoQ.png" alt="Picture">
+	  <h1>QXDio  <i class='bx bxs-check-circle' ></i></h1>
+ <bawah-judul>
+   
+   
+   Saya <b>Achmad Arindo</b> ,kelahiran 2005 asal 
+   <a href="https://g.co/kgs/uW7u3pn">Pacitan <i class='bx bxs-map bx-tada'
+   style='color:#03bb40'></i></a><br>
+   Biasa di panggil <a>Dio</a>,saya suka dengan hal yang baru 
+   <br>yang membuat saya senang. 
+   <br>
+   <br>FOLLOW JUGA SOSMED KU DI ATAS
+   <i class='bx bx-left-top-arrow-circle bx-flashing bx-rotate-90' ></i><i class='bx bx-left-top-arrow-circle bx-flashing bx-rotate-90' ></i><i class='bx bx-left-top-arrow-circle bx-flashing bx-rotate-90' ></i>.....
+ 
+ 
+ </bawah-judul>
+</div>
+<section>
+  <button  class="tombol1" onclick="openNav()">  selengkapnya </button>
+  <button id="tombol2" class="tombol2"> Suport <i class='bx bx-donate-heart' ></i> </button>
+  
+  <iframe src="https://www.youtube.com/embed/zX-Hhj1f5oQ" allowfullscreen
+  class="yt"></iframe>
+ 
+</section>
+<div id="and">
+  <h2>Thanks</h2>
+</div>
+
+<div id="mySidebar" style="display: none;">
+  <a href="profil.html" 
+  class="a"><i class='bx bxs-user'></i> QXDio?</a>
+  <a href="https://t.me/+dfCA6j9KoNo4Yzg1" 
+  class="a"><i class='bx bxl-telegram'></i>Grub Tele</a>
+  <a href="qxstore.com" 
+  class="a"><i class='bx bxs-store'></i>Shop (coming soon)</a>
+  
+  <a onclick="bukabox()" class="a"><i class='bx bx-list-ul'></i>List</a>
+  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='bx bxs-chevron-left-circle'></i></a>
+  
+  
+  
+</div>
+
+               <div id="box" style="display: none;">      
+  <a href="javascript:void(0)" class="tutupbox" onclick="tutupbox()"><i
+  class='bx bx-x-circle' style='color:#060303'  ></i></a><br>
+<h1>List</h1>
+ <div id="list">
+   <a href="https://vt.tiktok.com/ZSYJRPas9/" class="link">DOLAN-Tompe🌱</a>
+    <br><a href="#" class="link">kosong</a>
+    <br><a href="#" class="link">kosong</a>
+    <br><a href="#" class="link">kosong</a>
+ </div>
+
+</div>
+<footer>
+    <p>&copy; 2024 QXDio</p>
+  </footer>
+<script> 
+  function openNav() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+    
+    document.getElementById('tombol2').addEventListener('click', function() {
+      window.location.href = 'https://sociabuzz.com/qxdio';
+    });
+    
+   function bukabox() {
+  document.getElementById("box").style.display = "block";
+}
+   function tutupbox() {
+  document.getElementById("box").style.display = "none";
+}
+</script>
+</body>
+</html>
+  

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile QXDio</title>
+    <link rel="shortcut icon" href="logoQ.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .profile {
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 200px;
+            height: ;
+            border-radius: 10%;
+        }
+
+        .profile h1 {
+            margin-top: 20px;
+        }
+
+        .profile .text {
+            text-align: left;
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 15px;
+            line-height: 1.5;
+            background: #7664;
+            border-radius: 8px;
+        }
+        .profile .text a {
+          font-family: Serif-Bold;
+        }
+        
+       .profile txmini {
+         font-size: 10px;
+         
+       }
+
+        #contactButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contactButton:hover {
+            background-color: #84a045;
+        }
+      #close {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fd6021;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #close :hover {
+            background-color: #f80c0c;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="fotoprofil.jpg" alt="Poto Profile"><br>
+        <txmini>
+        source: <a href="https://www.instagram.com/qxdio_?igsh=YzA1aGR3cWNyNWx3"> 
+        instagram @qxdio_
+        </a>
+        </txmini>
+          
+        <h1>Achmad Arindo</h1>
+        <p>Content Creator</p>
+ <p class="text">|   Saya senang dengan berbagai hal, seperti merakit komponen dan komputer. Dan
+ juga seperti Editing ,Vidiografi dan Fotografi .
+ <br>
+ Saya sekolah di <a href="https://smknngadirojo.sch.id/">🎓SMK NEGERI NGADIROJO</a> Jurusan Perikanan .
+ Berawal dari SD saya kagum dengan hal elektronik dan IT ,banyak yang bertanya
+ "mengapa tidak masuk jurusan TKJ (Teknik Komputer dan Jaringan)".<br>
+ karna waktu pendaftaran Saya tidak keterima di jurusan tersebut ,Namun bagi
+ saya Bisa lah walaupun Hobi namun bisa sebagai pengalaman saya ,dan bisa di
+ tekuni. Yang perting Mau berusaha dan berkerja keras.
+ sekian Terima Kasih bila ada masukan saran ,silahkan berkomentar..</p>
+        
+        <button id="contactButton">Contact</button>
+        <br>
+        <button id="close" onclick="history.back()">keluar</button>
+    </div>
+    <script>
+        document.getElementById('contactButton').addEventListener('click', function() {
+            alert('Contact WhatsApp: +62 851-7951-7107');
+        });
+    
+    </script>
+</body>
+</html>
